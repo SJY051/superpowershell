@@ -8,10 +8,30 @@
 ## 사람용 빠른 시작
 
 1. **PowerShell 7.5+** 설치
-2. 핵심 CLI 베이스라인 설치
-3. 필요하면 에이전트 보조 도구 추가
-4. 원하는 프로필 조각만 선택 적용
+2. 전체 부트스트랩 미리보기
+3. 필요한 층만 실제 적용
+4. 필요하면 에이전트 보조 도구 추가
 5. 인터넷에서 가져온 프로필 조각을 적용하기 전에는 보안 메모를 먼저 확인
+
+## 원클릭 부트스트랩
+
+각 스크립트를 따로 실행하는 대신, 시작점으로는 아래 명령이 가장 좋습니다.
+
+```powershell
+pwsh -NoLogo -NoProfile -File .\scripts\bootstrap-all.ps1 -WhatIf
+```
+
+선택 기능까지 포함한 예시:
+
+```powershell
+pwsh -NoLogo -NoProfile -File .\scripts\bootstrap-all.ps1 -Apply -AcceptAgreements -InstallToolsRegistry -IncludeAgentExtras
+```
+
+Codex용 예시 스킬까지 함께 설치하려면:
+
+```powershell
+pwsh -NoLogo -NoProfile -File .\scripts\bootstrap-all.ps1 -Apply -AcceptAgreements -InstallToolsRegistry -InstallSkills -SkillPreset codex
+```
 
 ## 권장 핵심 베이스라인
 
@@ -68,6 +88,12 @@ pwsh -NoLogo -NoProfile -File .\scripts\install-agent-extras.ps1 -Apply
 - `defuddle`는 사용자 전용 npm prefix
 - `fx`는 사용자 전용 npm prefix
 - `jc`는 `uv tool`, `pipx`, 또는 `pip --user`
+
+## 추가 부트스트랩 스크립트
+
+- `bootstrap-profile.ps1` - 모듈형 `profile.d` 스캐폴드와 로더 생성
+- `bootstrap-tools-inventory.ps1` - 현재 머신 기준의 starter `terminal-tools.json` 생성
+- `install-skills.ps1` - 레포에 포함된 예시 스킬을 원하는 스킬 디렉터리로 복사
 
 ## 왜 두 층으로 나누는가
 

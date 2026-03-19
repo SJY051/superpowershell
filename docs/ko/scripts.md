@@ -49,6 +49,10 @@ Windows에서도 `XDG_CONFIG_HOME`, `XDG_CACHE_HOME`, `XDG_DATA_HOME`을 잡아 
 
 - [../../scripts/install-core-tools-winget.ps1](../../scripts/install-core-tools-winget.ps1) - 권장 베이스라인 설치 명령을 미리 보고 적용
 - [../../scripts/install-agent-extras.ps1](../../scripts/install-agent-extras.ps1) - 좀 더 격리된 기본값으로 에이전트 보조 도구를 미리 보고 적용
+- [../../scripts/bootstrap-all.ps1](../../scripts/bootstrap-all.ps1) - 베이스라인 설치, 프로필 설정, 인벤토리 부트스트랩, 선택 기능, 예시 스킬 설치를 한 번에 묶는 진입점
+- [../../scripts/bootstrap-profile.ps1](../../scripts/bootstrap-profile.ps1) - 모듈형 `profile.d` 스캐폴드와 로더 생성
+- [../../scripts/bootstrap-tools-inventory.ps1](../../scripts/bootstrap-tools-inventory.ps1) - 현재 설치된 명령 기준의 starter `terminal-tools.json` 생성
+- [../../scripts/install-skills.ps1](../../scripts/install-skills.ps1) - 레포에 포함된 예시 스킬을 원하는 스킬 디렉터리에 설치
 - [../../scripts/export-preferred-tools.ps1](../../scripts/export-preferred-tools.ps1) - 설정 가능한 인벤토리 디렉터리에서 대표 도구만 JSON으로 출력
 - [../../scripts/get-shell-matrix.ps1](../../scripts/get-shell-matrix.ps1) - 기본적으로 호스트 고유 정보를 생략한 셸 커버리지 JSON 출력
 - [../../features/tools-registry/README.md](../../features/tools-registry/README.md) - `tools`와 `tools-add`를 추가하는 선택 설치 기능

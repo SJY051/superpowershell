@@ -4,6 +4,8 @@
 
 This documentation explains how to build an agent-friendly Windows PowerShell environment that feels calmer, more Unix-like, and more predictable for both humans and local coding agents.
 
+Think of the repository as a public guide plus starter kit, not as a finished turnkey product.
+
 ## Documents
 
 - [tools.md](tools.md) - core and extended tool catalog, installation methods, POSIX analogues, and practical value

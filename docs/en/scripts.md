@@ -49,6 +49,10 @@ If an optional integration is missing, prefer a calm fallback over a noisy start
 
 - [../../scripts/install-core-tools-winget.ps1](../../scripts/install-core-tools-winget.ps1) - preview or install the recommended baseline with `winget`
 - [../../scripts/install-agent-extras.ps1](../../scripts/install-agent-extras.ps1) - preview or install optional agent-oriented extras with more isolated defaults
+- [../../scripts/bootstrap-all.ps1](../../scripts/bootstrap-all.ps1) - orchestrate baseline install, profile setup, inventory bootstrap, optional feature install, and optional skill install
+- [../../scripts/bootstrap-profile.ps1](../../scripts/bootstrap-profile.ps1) - create a modular `profile.d` scaffold and loader
+- [../../scripts/bootstrap-tools-inventory.ps1](../../scripts/bootstrap-tools-inventory.ps1) - generate a starter `terminal-tools.json` from currently installed commands
+- [../../scripts/install-skills.ps1](../../scripts/install-skills.ps1) - install shipped example skills into a target skill directory
 - [../../scripts/export-preferred-tools.ps1](../../scripts/export-preferred-tools.ps1) - emit the preferred tool subset as JSON from a configurable inventory directory
 - [../../scripts/get-shell-matrix.ps1](../../scripts/get-shell-matrix.ps1) - emit the current shell coverage snapshot as JSON, with host-specific data omitted by default
 - [../../features/tools-registry/README.md](../../features/tools-registry/README.md) - optional installable feature that adds `tools` and `tools-add`

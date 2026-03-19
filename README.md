@@ -3,8 +3,8 @@
 An agent-friendly Windows PowerShell environment guide for humans and local coding agents.  
 사람과 로컬 코딩 에이전트를 위한, 에이전트 친화적인 Windows PowerShell 환경 가이드입니다.
 
-This repository explains how to make PowerShell on Windows as agent-friendly and POSIX-friendly as practical. The goal is not to install every interesting CLI, but to build a shell environment that is easy for humans to read, easy for agents to parse, and predictable enough to automate safely.  
-이 레포지토리는 Windows에서 PowerShell을 최대한 에이전트 친화적이고 POSIX 친화적으로 다듬는 방법을 설명합니다. 목표는 흥미로운 CLI를 전부 설치하는 것이 아니라, 사람이 읽기 좋고 에이전트가 파싱하기 쉬우며 자동화하기에도 예측 가능한 셸 환경을 만드는 것입니다.
+This repository is best understood as a **public guide + starter kit + optional feature set** for building an agent-friendly Windows PowerShell environment. The goal is not to install every interesting CLI, but to provide working defaults, reusable scripts, and clear operational guidance that make the shell easier for humans to read, easier for agents to parse, and predictable enough to automate safely.  
+이 레포지토리는 에이전트 친화적인 Windows PowerShell 환경을 만들기 위한 **공개형 가이드 + 스타터 킷 + 선택 기능 묶음**으로 이해하는 편이 가장 정확합니다. 목표는 흥미로운 CLI를 전부 설치하는 것이 아니라, 사람이 읽기 좋고 에이전트가 파싱하기 쉬우며 자동화하기에도 예측 가능한 셸 환경을 만들 수 있도록, 실제로 동작하는 기본값과 재사용 가능한 스크립트, 그리고 명확한 운영 가이드를 제공하는 것입니다.
 
 ## Why This Exists / 왜 필요한가
 
@@ -68,6 +68,7 @@ PowerShell 7+는 더 나은 성능, 최신 모듈 호환성, 향상된 ANSI 지�
 - [CONTRIBUTING.md](CONTRIBUTING.md) - contribution guidance / 기여 안내
 - [skills/README.md](skills/README.md) - example reusable skills for Windows-friendly agents / Windows 친화 에이전트를 위한 예시 스킬
 - [features/tools-registry/README.md](features/tools-registry/README.md) - optional installable `tools` / `tools-add` feature / 선택 설치 가능한 `tools` / `tools-add` 기능
+- [scripts/bootstrap-all.ps1](scripts/bootstrap-all.ps1) - preview-first all-in-one bootstrap / 미리보기 우선 전체 부트스트랩
 
 ## What This Repo Emphasizes / 이 레포지토리가 강조하는 것
 
@@ -98,6 +99,7 @@ This repository currently focuses on the following areas.
 - task running and verification / 작업 실행과 검증
 - PowerShell profile design / PowerShell 프로필 설계
 - local coding agent workflows / 로컬 코딩 에이전트 워크플로우
+- bootstrap scripts for first-run setup / 첫 실행 설정을 위한 부트스트랩 스크립트
 
 ## Notes / 참고 사항
 

@@ -14,7 +14,7 @@ Give the agent:
 ## Recommended Minimum
 
 1. Install `pwsh` 7.5 or newer.
-2. Install the core baseline from [install.md](install.md).
+2. Start with the preview-first bootstrap flow from [install.md](install.md).
 3. Add a low-noise execution profile for agent use.
 4. Expose a small tool registry such as `tools`.
 5. Prefer representative commands over ambiguous overlap.

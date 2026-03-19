@@ -8,10 +8,30 @@ This project treats installation in two layers:
 ## Human Quick Start
 
 1. Install **PowerShell 7.5+**
-2. Install the core CLI baseline
-3. Add optional agent extras
-4. Apply or adapt the profile snippets you actually want
+2. Preview the all-in-one bootstrap
+3. Apply only the layers you actually want
+4. Add optional agent extras
 5. Read the security notes before sourcing profile fragments from the internet
+
+## One-Shot Bootstrap
+
+If you want a guided starting point instead of running each script by hand, start here:
+
+```powershell
+pwsh -NoLogo -NoProfile -File .\scripts\bootstrap-all.ps1 -WhatIf
+```
+
+Example with the optional tools registry and agent extras:
+
+```powershell
+pwsh -NoLogo -NoProfile -File .\scripts\bootstrap-all.ps1 -Apply -AcceptAgreements -InstallToolsRegistry -IncludeAgentExtras
+```
+
+If you want to install the repo's example skills for Codex too:
+
+```powershell
+pwsh -NoLogo -NoProfile -File .\scripts\bootstrap-all.ps1 -Apply -AcceptAgreements -InstallToolsRegistry -InstallSkills -SkillPreset codex
+```
 
 ## Recommended Core Baseline
 
@@ -68,6 +88,12 @@ This script prefers more isolated defaults:
 - `defuddle` via a user-local npm prefix
 - `fx` via a user-local npm prefix
 - `jc` via `uv tool`, `pipx`, or `pip --user`, depending on what is available
+
+## Additional Bootstrap Scripts
+
+- `bootstrap-profile.ps1` - create a modular `profile.d` scaffold and a loader
+- `bootstrap-tools-inventory.ps1` - generate a starter `terminal-tools.json` for the current machine
+- `install-skills.ps1` - copy the repo's example skills into a target skill directory
 
 ## Why Two Layers?
 
