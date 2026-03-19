@@ -15,7 +15,6 @@ __pycache__/
 
 # Logs and local notes
 *.log
-SECURITY.md
 
 # Local generated outputs
 out/
