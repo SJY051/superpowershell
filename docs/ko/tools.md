@@ -28,7 +28,7 @@
 
 | 툴 | 효과 | 비고 |
 | --- | --- | --- |
-| `delta` | `git diff`를 읽기 좋게 만듦 | 기본 readable diff pager |
+| `delta` | `git diff`를 읽기 좋게 만듦 | 기본 readable diff pager; `difft`와 함께 쓰면 구조적 diff까지 보완 |
 | `hyperfine` | 셸 명령 벤치마크 | 도구 선택을 수치로 비교할 때 유용 |
 | `watchexec` | 파일 변경 시 명령 재실행 | 반복적인 로컬 테스트에 유용 |
 | `jc` | 명령 출력 → JSON 변환 | Windows/PowerShell 혼합 환경에서 특히 유용 |
@@ -38,7 +38,6 @@
 | `duckdb` | 로컬 파일을 SQL로 조회 | CSV, Parquet, JSON을 하나의 질의 모델로 다루기 좋음 |
 | `sqlite-utils` | 로컬 데이터를 빠르게 SQLite로 정리 | 셸 출력이나 JSON을 질의 가능한 로컬 상태로 바꾸기 좋음 |
 | `qsv` | 고성능 CSV 도구 | 표형 데이터가 커질수록 강함 |
-| `delta` + `difft` | 읽기 좋은 diff + 구조적 diff | 서로 대체보다는 보완 관계 |
 
 ## 선택 확장 후보
 

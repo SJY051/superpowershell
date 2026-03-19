@@ -40,7 +40,3 @@ This structure makes it easier to:
 - explain behavior changes
 - load only safe subsets
 - keep old compatibility helpers from polluting the main startup path
-
-## Public Documentation Rule
-
-If a profile module is not included in the repository, document it as an example pattern rather than as a shipped file.

@@ -41,17 +41,17 @@ function Show-Preview {
     Write-Host $NpmPrefix
 }
 
+if ($WhatIf -or -not $Apply) {
+    Show-Preview
+    return
+}
+
 if (-not (Get-Command npm -ErrorAction SilentlyContinue)) {
     throw "npm was not found. Install Node.js/npm first or skip the npm-based extras."
 }
 
 if (-not (Get-Command python -ErrorAction SilentlyContinue)) {
     throw "python was not found. Install Python first or skip the Python-based extras."
-}
-
-if ($WhatIf -or -not $Apply) {
-    Show-Preview
-    return
 }
 
 New-Item -ItemType Directory -Force -Path $NpmPrefix | Out-Null

@@ -28,7 +28,7 @@ It does **not** try to document every installed command on the machine. The goal
 
 | Tool | Why it helps | Notes |
 | --- | --- | --- |
-| `delta` | better `git diff` reading | preferred readable diff pager |
+| `delta` | better `git diff` reading | preferred readable diff pager; pairs well with `difft` for structural diff |
 | `hyperfine` | benchmark shell commands | useful for measuring tool choices |
 | `watchexec` | rerun commands on file changes | useful during repetitive local testing |
 | `jc` | convert command output to JSON | especially good in mixed Windows / PowerShell environments |
@@ -38,7 +38,6 @@ It does **not** try to document every installed command on the machine. The goal
 | `duckdb` | query local files with SQL | excellent for ad hoc inspection of CSV, Parquet, and JSON with one mental model |
 | `sqlite-utils` | import and reshape local data into SQLite quickly | useful when raw shell output should become queryable local state |
 | `qsv` | high-performance CSV tooling | strong when spreadsheet-like data is too large or repetitive for ad hoc scripts |
-| `delta` + `difft` | readable diff + structural diff | complementary rather than redundant |
 
 ## Optional Expansion Candidates
 

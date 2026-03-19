@@ -34,12 +34,12 @@ $packages = @(
 function Get-InstallArgs {
     param([string]$Id)
 
-    $args = @('install', '--id', $Id, '-e')
+    $installArgs = @('install', '--id', $Id, '-e')
     if ($AcceptAgreements) {
-        $args += '--accept-package-agreements'
-        $args += '--accept-source-agreements'
+        $installArgs += '--accept-package-agreements'
+        $installArgs += '--accept-source-agreements'
     }
-    return $args
+    return $installArgs
 }
 
 if ($WhatIf -or -not $Apply) {
@@ -52,5 +52,6 @@ if ($WhatIf -or -not $Apply) {
 
 foreach ($id in $packages) {
     Write-Host "Installing $id via winget..."
-    & winget @(Get-InstallArgs -Id $id)
+    $wingetArgs = Get-InstallArgs -Id $id
+    & winget @wingetArgs
 }

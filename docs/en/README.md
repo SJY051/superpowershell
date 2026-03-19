@@ -8,11 +8,13 @@ Think of the repository as a public guide plus starter kit, not as a finished tu
 
 ## Documents
 
+- [what-changes.md](what-changes.md) - what actually changes after applying this environment
 - [tools.md](tools.md) - core and extended tool catalog, installation methods, POSIX analogues, and practical value
 - [install.md](install.md) - practical installation path for humans and agents
 - [agent-quickstart.md](agent-quickstart.md) - minimal setup path for local agents
 - [shell-matrix.md](shell-matrix.md) - what shells exist and how they differ
 - [profile-architecture.md](profile-architecture.md) - modular PowerShell profile structure
+- [profile-example.md](profile-example.md) - practical profile.d setup with working examples
 - [aliases.md](aliases.md) - recommended aliases and command replacements
 - [scripts.md](scripts.md) - useful PowerShell helper scripts, profile patterns, and agent-oriented shell helpers
 - [skills.md](skills.md) - additional skill ideas worth using in Windows-focused agent workflows

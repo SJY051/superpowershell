@@ -102,7 +102,13 @@ New-Item -ItemType Directory -Force -Path $ProfileDirectory | Out-Null
 
 foreach ($name in $files.Keys) {
     $path = Join-Path $ProfileDirectory $name
-    Set-Content -LiteralPath $path -Value $files[$name] -Encoding UTF8
+    if (Test-Path -LiteralPath $path) {
+        Write-Host "Skipping (already exists): $path"
+    }
+    else {
+        Set-Content -LiteralPath $path -Value $files[$name] -Encoding UTF8
+        Write-Host "Created: $path"
+    }
 }
 
 $profileParent = Split-Path -Parent $ProfilePath

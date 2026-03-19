@@ -12,6 +12,14 @@ These aliases are not about novelty. They are here to reduce ambiguity and make 
 | `ls` | `eza` | Better default directory listing |
 | `cd` | `zoxide`-aware wrapper | Smarter directory jumping while preserving explicit paths |
 
+## Watch Out: `curl` on PowerShell
+
+PowerShell ships a built-in alias `curl` → `Invoke-WebRequest`. This means bare `curl` does not call the real curl binary.
+
+- Use `curl.exe` when you need the real curl
+- Or remove the alias in your profile: `Remove-Item Alias:curl -Force -ErrorAction SilentlyContinue`
+- In agent contexts, always prefer `curl.exe` to avoid silent misbehavior
+
 ## Important Principle
 
 Do not remove alternatives just because a default exists.

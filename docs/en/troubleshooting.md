@@ -39,6 +39,18 @@ Examples:
 
 In those cases, the shell may fall back instead of crashing.
 
+## `curl` does not behave like real curl
+
+In stock PowerShell, `curl` is an alias for `Invoke-WebRequest`. This means `curl https://example.com` returns a PowerShell response object, not raw HTTP output.
+
+Fix:
+
+- Use `curl.exe` explicitly to call the real curl binary
+- Or remove the built-in alias: `Remove-Item Alias:curl -Force -ErrorAction SilentlyContinue`
+- In agent execution profiles, prefer `curl.exe` to avoid ambiguity
+
+This is one of the most common traps for both agents and Unix-experienced humans on Windows.
+
 ## A legacy helper still exists
 
 Document it clearly as compatibility-only.

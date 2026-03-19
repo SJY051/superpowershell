@@ -8,11 +8,13 @@
 
 ## 문서 구성
 
+- [what-changes.md](what-changes.md) - 이 환경을 적용하면 실제로 달라지는 것
 - [tools.md](tools.md) - 핵심/확장 툴 카탈로그, 설치 방법, POSIX 대응 관계, 실제 효용
 - [install.md](install.md) - 사람/에이전트용 설치 가이드
 - [agent-quickstart.md](agent-quickstart.md) - 로컬 에이전트용 짧은 시작 가이드
 - [shell-matrix.md](shell-matrix.md) - 셸 종류와 차이
 - [profile-architecture.md](profile-architecture.md) - 모듈형 PowerShell 프로필 구조
+- [profile-example.md](profile-example.md) - 실제 동작하는 profile.d 구성 예시
 - [aliases.md](aliases.md) - 추천 aliases와 명령 치환 규칙
 - [scripts.md](scripts.md) - 유용한 PowerShell 보조 스크립트, 프로필 패턴, 에이전트용 헬퍼
 - [skills.md](skills.md) - Windows 중심 에이전트 워크플로에 도움이 되는 추가 스킬 아이디어

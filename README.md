@@ -44,31 +44,19 @@ PowerShell 7+는 더 나은 성능, 최신 모듈 호환성, 향상된 ANSI 지�
 
 ## Repo Structure / 레포지토리 구조
 
+```
+docs/en/          English documentation index and guides
+docs/ko/          한국어 문서 인덱스 및 가이드
+scripts/          Installation and bootstrap scripts / 설치 및 부트스트랩 스크립트
+features/         Optional installable features / 선택 설치 기능
+skills/           Example reusable agent skills / 예시 에이전트 스킬
+```
+
 - [docs/en/README.md](docs/en/README.md) - English index / 영문 인덱스
 - [docs/ko/README.md](docs/ko/README.md) - Korean index / 한국어 인덱스
-- [docs/en/install.md](docs/en/install.md) - English install guide / 영문 설치 가이드
-- [docs/ko/install.md](docs/ko/install.md) - Korean install guide / 한국어 설치 가이드
-- [docs/en/agent-quickstart.md](docs/en/agent-quickstart.md) - short setup path for local agents / 로컬 에이전트용 짧은 설정 경로
-- [docs/ko/agent-quickstart.md](docs/ko/agent-quickstart.md) - short setup path for local agents in Korean / 한국어 로컬 에이전트용 짧은 설정 경로
-- [docs/en/tools.md](docs/en/tools.md) - tool catalog and installation guidance / 툴 카탈로그와 설치 안내
-- [docs/ko/tools.md](docs/ko/tools.md) - tool catalog and installation guidance in Korean / 한국어 툴 카탈로그와 설치 안내
-- [docs/en/shell-matrix.md](docs/en/shell-matrix.md) - shell coverage and differences / 셸 커버리지와 차이
-- [docs/ko/shell-matrix.md](docs/ko/shell-matrix.md) - shell coverage and differences in Korean / 한국어 셸 커버리지와 차이
-- [docs/en/profile-architecture.md](docs/en/profile-architecture.md) - profile layout and load strategy / 프로필 구조와 로드 전략
-- [docs/ko/profile-architecture.md](docs/ko/profile-architecture.md) - profile layout and load strategy in Korean / 한국어 프로필 구조와 로드 전략
-- [docs/en/aliases.md](docs/en/aliases.md) - recommended aliases and command mappings / 추천 별칭과 명령 대응표
-- [docs/ko/aliases.md](docs/ko/aliases.md) - recommended aliases and command mappings in Korean / 한국어 추천 별칭과 명령 대응표
-- [docs/en/scripts.md](docs/en/scripts.md) - PowerShell helper scripts and profile patterns / PowerShell 보조 스크립트와 프로필 패턴
-- [docs/ko/scripts.md](docs/ko/scripts.md) - PowerShell helper scripts and profile patterns in Korean / 한국어 PowerShell 보조 스크립트와 프로필 패턴
-- [docs/en/skills.md](docs/en/skills.md) - extra skills for Windows-friendly agents / Windows 친화 에이전트를 위한 추가 스킬
-- [docs/ko/skills.md](docs/ko/skills.md) - extra skills for Windows-friendly agents in Korean / 한국어 Windows 친화 에이전트를 위한 추가 스킬
-- [docs/en/troubleshooting.md](docs/en/troubleshooting.md) - troubleshooting notes / 문제 해결 메모
-- [docs/ko/troubleshooting.md](docs/ko/troubleshooting.md) - troubleshooting notes in Korean / 한국어 문제 해결 메모
-- [SECURITY.md](SECURITY.md) - release and operational safety notes / 공개 및 운용 보안 메모
-- [CONTRIBUTING.md](CONTRIBUTING.md) - contribution guidance / 기여 안내
-- [skills/README.md](skills/README.md) - example reusable skills for Windows-friendly agents / Windows 친화 에이전트를 위한 예시 스킬
-- [features/tools-registry/README.md](features/tools-registry/README.md) - optional installable `tools` / `tools-add` feature / 선택 설치 가능한 `tools` / `tools-add` 기능
 - [scripts/bootstrap-all.ps1](scripts/bootstrap-all.ps1) - preview-first all-in-one bootstrap / 미리보기 우선 전체 부트스트랩
+- [SECURITY.md](SECURITY.md) - safety notes / 보안 메모
+- [CONTRIBUTING.md](CONTRIBUTING.md) - contribution guidance / 기여 안내
 
 ## What This Repo Emphasizes / 이 레포지토리가 강조하는 것
 

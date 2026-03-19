@@ -39,6 +39,18 @@
 
 이 경우 셸은 크래시 대신 fallback으로 내려갑니다.
 
+## `curl`이 진짜 curl처럼 동작하지 않는다
+
+기본 PowerShell에서 `curl`은 `Invoke-WebRequest`의 alias입니다. 따라서 `curl https://example.com`은 HTTP 원시 출력이 아니라 PowerShell 응답 객체를 반환합니다.
+
+해결 방법:
+
+- 진짜 curl 바이너리를 호출하려면 `curl.exe`를 명시적으로 사용
+- 또는 기본 alias를 제거: `Remove-Item Alias:curl -Force -ErrorAction SilentlyContinue`
+- 에이전트 실행 프로필에서는 `curl.exe`를 쓰는 편이 안전
+
+이것은 Windows에서 에이전트와 Unix 경험자 모두가 가장 빠지기 쉬운 함정 중 하나입니다.
+
 ## 레거시 헬퍼가 아직 남아 있다
 
 호환용이라는 점을 분명히 문서화해야 합니다.

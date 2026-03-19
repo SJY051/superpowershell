@@ -12,6 +12,14 @@
 | `ls` | `eza` | 더 나은 기본 디렉터리 listing |
 | `cd` | `zoxide`를 인지하는 wrapper | 명시적 경로 이동은 유지하면서 더 똑똑한 점프 제공 |
 
+## 주의: PowerShell에서의 `curl`
+
+PowerShell에는 기본 alias `curl` → `Invoke-WebRequest`가 내장되어 있습니다. 따라서 `curl`만 쓰면 진짜 curl 바이너리가 호출되지 않습니다.
+
+- 진짜 curl이 필요하면 `curl.exe`를 사용
+- 또는 프로필에서 alias를 제거: `Remove-Item Alias:curl -Force -ErrorAction SilentlyContinue`
+- 에이전트 환경에서는 항상 `curl.exe`를 쓰는 편이 안전
+
 ## 중요한 원칙
 
 대표 도구가 있다고 해서 대안 도구를 지울 필요는 없습니다.
