@@ -27,7 +27,7 @@ However, the default Windows shell environment often has the following problems.
 This repository documents one practical answer.  
 이 레포지토리는 그에 대한 하나의 실용적인 해답을 정리합니다.
 
-- prefer **PowerShell 7.5+** / **PowerShell 7.5+**를 우선 사용
+- prefer **PowerShell 7.5+** / **PowerShell 7.5+** 를 우선 사용
 - keep **Windows PowerShell 5.1** only for compatibility / **Windows PowerShell 5.1**은 호환성용으로만 유지
 - use a **low-noise exec profile** for agents / 에이전트를 위한 **저잡음 exec 프로필** 사용
 - expose a **tool registry** with preferred commands and metadata / 대표 명령과 메타데이터를 담은 **tool registry** 제공
