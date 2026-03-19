@@ -1,0 +1,23 @@
+# PowerShell / Windows
+*.tmp
+*.bak
+*.old
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs and local notes
+*.log
+SECURITY.md
+
+# Local generated outputs
+out/
+dist/
+build/

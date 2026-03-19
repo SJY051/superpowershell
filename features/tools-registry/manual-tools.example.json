@@ -1,0 +1,26 @@
+[
+  {
+    "name": "jq",
+    "category": "data",
+    "description": "JSON processor",
+    "available_in": ["powershell", "pwsh"],
+    "command_types": ["application"],
+    "preferred": true,
+    "replaces": [],
+    "posix_analogue": "jq",
+    "tags": ["json", "data"],
+    "notes": "Representative JSON filter"
+  },
+  {
+    "name": "fd",
+    "category": "search",
+    "description": "Friendly recursive file finder",
+    "available_in": ["powershell", "pwsh"],
+    "command_types": ["application"],
+    "preferred": true,
+    "replaces": ["find"],
+    "posix_analogue": "find",
+    "tags": ["files", "search"],
+    "notes": "Representative file discovery tool"
+  }
+]
